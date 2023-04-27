@@ -10,7 +10,7 @@ import java.util.List;
 public interface OrderRepository
         extends CrudRepository<TacoOrder, Long> {
     //Spring Data method signatures
-    
+
     List<TacoOrder> findByDeliveryZipAndPlacedAtBetween(String deliveryZid,
                                                         Instant startDate,
                                                         Instant finalDate);
